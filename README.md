@@ -253,18 +253,18 @@ Distributed under the MIT License. See `LICENSE` for more information.
 [linkedin-url]: https://www.linkedin.com/in/virgil-ribeyre-810135196/
 
 [product-screenshot]: images/screenshot.png
-[Nix]: https://img.shields.io/badge/nix-bedbf1?style=for-the-badge&logo=nixos
+[Nix]: https://img.shields.io/badge/nix-0B1120?style=for-the-badge&logo=nixos
 [Nix-url]: https://nixos.org/
 
-[Vue]: https://img.shields.io/badge/Vue-35495E?style=for-the-badge&logo=vuedotjs
+[Vue]: https://img.shields.io/badge/Vue-0B1120E?style=for-the-badge&logo=vuedotjs
 [Vue-url]: https://vuejs.org/
 
-[Vite]: https://img.shields.io/badge/Vite-1B1C20?style=for-the-badge&logo=vite
+[Vite]: https://img.shields.io/badge/Vite-0B1120?style=for-the-badge&logo=vite
 [Vite-url]: https://vitejs.dev/
 
 [TailwindCSS]: https://img.shields.io/badge/TailwindCSS-0B1120?style=for-the-badge&logo=tailwindcss
 [TailwindCSS-url]: https://tailwindcss.com/
 
-[Typescript]: https://img.shields.io/badge/Typescript-262626?style=for-the-badge&logo=typescript
+[Typescript]: https://img.shields.io/badge/Typescript-0B1120?style=for-the-badge&logo=typescript
 [Typescript-url]: https://www.typescriptlang.org/
 

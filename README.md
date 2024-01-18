@@ -256,7 +256,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 [Nix]: https://img.shields.io/badge/nix-0B1120?style=for-the-badge&logo=nixos
 [Nix-url]: https://nixos.org/
 
-[Vue]: https://img.shields.io/badge/Vue-0B1120E?style=for-the-badge&logo=vuedotjs
+[Vue]: https://img.shields.io/badge/Vue-0B1120?style=for-the-badge&logo=vuedotjs
 [Vue-url]: https://vuejs.org/
 
 [Vite]: https://img.shields.io/badge/Vite-0B1120?style=for-the-badge&logo=vite

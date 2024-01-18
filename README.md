@@ -260,9 +260,9 @@ make build
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Add documentation for every applets
-- [ ] Create our own Network-Manager applet following the same pattern of
-configuration and theming options.
+- [ ] Add proper testing support
+- [ ] Switch to personal ESLint configuration
+- [ ] Add link to personal styleguide
 
 See the [open issues](https://gitlab.com/bootstrapers/vue-typescript-bootstraper/-/issues) for a full list of proposed features (and known issues).
 

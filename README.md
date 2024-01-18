@@ -207,6 +207,7 @@ make build
 ### Directory Structure
 
 <!-- LTeX: enabled=false -->
+```
 .
 ├── nix/
 │   └── Contains the files you need for building with Nix.
@@ -250,7 +251,7 @@ make build
 ├── test/
 │   └── Contains your test (WIP)
 └── *Makefile* | Eases Nix derivation generation
-
+```
 <!-- LTeX: enabled=true -->
 
 

@@ -12,6 +12,7 @@ module.exports = {
     "airbnb-base",
     "airbnb-typescript/base",
     "plugin:import/typescript",
+    "plugin:storybook/recommended"
   ],
   parser: "@typescript-eslint/parser",
   parserOptions: {

@@ -8,15 +8,14 @@ module.exports = {
   },
   extends: [
     "plugin:jsdoc/recommended-typescript-error",
+    "plugin:vue/vue3-recommended",
     "airbnb-base",
     "airbnb-typescript/base",
   ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaVersion: "latest",
-    sourceType: "module",
     project: true,
-    tsconfigRootDir: __dirname,
   },
   plugins: ["@typescript-eslint", "jsdoc", "@stylistic/eslint-plugin-js"],
   rules: {
@@ -43,16 +42,6 @@ module.exports = {
         : "off",
     "new-cap": "error",
     "no-else-return": ["error", { allowElseIf: false }],
-    "sort-imports": [
-      "warn",
-      {
-        ignoreCase: false,
-        ignoreDeclarationSort: false,
-        ignoreMemberSort: false,
-        memberSyntaxSortOrder: ["none", "all", "multiple", "single"],
-        allowSeparatedGroups: false,
-      },
-    ],
     "@typescript-eslint/naming-convention": [
       "error",
       {
@@ -75,4 +64,3 @@ module.exports = {
     semi: ["error", "always"],
   },
 };
-

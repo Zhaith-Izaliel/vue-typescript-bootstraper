@@ -37,14 +37,14 @@
     An opinionated bootstraper to create a Vue.js application, with first class
     Typescript support, powered by Vite.js
     <br />
-    <a href="https://gitlab.com/Zhaith-Izaliel/vue-typescript-bootstraper"><strong>Explore the docs »</strong></a>
+    <a href="https://gitlab.com/bootstrapers/vue-typescript-bootstraper"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://gitlab.com/Zhaith-Izaliel/vue-typescript-bootstraper">View Demo</a>
+    <a href="https://gitlab.com/bootstrapers/vue-typescript-bootstraper">View Demo</a>
     ·
-    <a href="https://gitlab.com/Zhaith-Izaliel/vue-typescript-bootstraper/-/issues">Report Bug</a>
+    <a href="https://gitlab.com/bootstrapers/vue-typescript-bootstraper/-/issues">Report Bug</a>
     ·
-    <a href="https://gitlab.com/Zhaith-Izaliel/vue-typescript-bootstraper/-/issues">Request Feature</a>
+    <a href="https://gitlab.com/bootstrapers/vue-typescript-bootstraper/-/issues">Request Feature</a>
   </p>
 </div>
 
@@ -75,7 +75,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Vue Ts Bootstrapper Screenshot][product-screenshot]](https://gitlab.com/Zhaith-Izaliel/vue-typescript-bootstraper)
+[![Vue Ts Bootstrapper Screenshot][product-screenshot]](https://gitlab.com/bootstrapers/vue-typescript-bootstraper)
 This project is used as a base for other project to start on. It provides a
 complete package to work with Vue.js 3, with Typescript, on Vite. It is also
 loaded with support for routing using Vue Router, internationalization using
@@ -189,7 +189,7 @@ npm run dev
 - [ ] Create our own Network-Manager applet following the same pattern of
 configuration and theming options.
 
-See the [open issues](https://gitlab.com/Zhaith-Izaliel/vue-typescript-bootstraper/-/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://gitlab.com/bootstrapers/vue-typescript-bootstraper/-/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -233,21 +233,21 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/gitlab/contributors/Zhaith-Izaliel/vue-typescript-bootstraper.svg?style=for-the-badge&logo=gitlab
-[contributors-url]: https://gitlab.com/Zhaith-Izaliel/vue-typescript-bootstraper/-/graphs/master?ref_type=heads
+[contributors-shield]: https://img.shields.io/gitlab/contributors/bootstrapers/vue-typescript-bootstraper.svg?style=for-the-badge&logo=gitlab
+[contributors-url]: https://gitlab.com/bootstrapers/vue-typescript-bootstraper/-/graphs/master?ref_type=heads
 
-[forks-shield]: https://img.shields.io/gitlab/forks/Zhaith-Izaliel/vue-typescript-bootstraper.svg?style=for-the-badge&logo=gitlab
-[forks-url]: https://gitlab.com/Zhaith-Izaliel/vue-typescript-bootstraper/-/forks
+[forks-shield]: https://img.shields.io/gitlab/forks/bootstrapers/vue-typescript-bootstraper.svg?style=for-the-badge&logo=gitlab
+[forks-url]: https://gitlab.com/bootstrapers/vue-typescript-bootstraper/-/forks
 
-[stars-shield]: https://img.shields.io/gitlab/stars/Zhaith-Izaliel/vue-typescript-bootstraper.svg?style=for-the-badge&logo=gitlab
-[stars-url]: https://gitlab.com/Zhaith-Izaliel/vue-typescript-bootstraper/-/starrers
+[stars-shield]: https://img.shields.io/gitlab/stars/bootstrapers/vue-typescript-bootstraper.svg?style=for-the-badge&logo=gitlab
+[stars-url]: https://gitlab.com/bootstrapers/vue-typescript-bootstraper/-/starrers
 
-[issues-shield]: https://img.shields.io/gitlab/issues/open/Zhaith-Izaliel%2Fvue-typescript-bootstraper?style=for-the-badge
+[issues-shield]: https://img.shields.io/gitlab/issues/open/bootstrapers%2Fvue-typescript-bootstraper?style=for-the-badge
 
-[issues-url]: https://gitlab.com/Zhaith-Izaliel/vue-typescript-bootstraper/-/issues
+[issues-url]: https://gitlab.com/bootstrapers/vue-typescript-bootstraper/-/issues
 
-[license-shield]: https://img.shields.io/gitlab/license/Zhaith-Izaliel/vue-typescript-bootstraper.svg?style=for-the-badge&logo=gitlab
-[license-url]: https://gitlab.com/Zhaith-Izaliel/vue-typescript-bootstraper/-/blob/master/LICENSE?ref_type=heads
+[license-shield]: https://img.shields.io/gitlab/license/bootstrapers/vue-typescript-bootstraper.svg?style=for-the-badge&logo=gitlab
+[license-url]: https://gitlab.com/bootstrapers/vue-typescript-bootstraper/-/blob/master/LICENSE?ref_type=heads
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/virgil-ribeyre-810135196/

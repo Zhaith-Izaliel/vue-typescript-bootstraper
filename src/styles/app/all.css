@@ -47,7 +47,7 @@ button {
   transition: border-color 0.25s;
 
   &:hover {
-    border-color: #646cff;
+    @apply border-green-400;
   }
 
   &:focus,
@@ -79,3 +79,4 @@ button {
     background-color: #f9f9f9;
   }
 }
+

@@ -3,7 +3,7 @@ import HelloWorld from "./components/HelloWorld.vue";
 </script>
 
 <template>
-  <div>
+  <div class="flex space-x-4 justify-center items-center">
     <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
     </a>
@@ -28,3 +28,4 @@ import HelloWorld from "./components/HelloWorld.vue";
   filter: drop-shadow(0 0 2em #42b883aa);
 }
 </style>
+

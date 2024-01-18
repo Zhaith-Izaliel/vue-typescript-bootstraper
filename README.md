@@ -182,27 +182,30 @@ npm run dev
 ```bash
 npm run dev
 ```
-  Vite enable Hot Reload by default, and will react to changes to your code as you
-  save.
+Vite enable Hot Reload by default, and will react to changes to your code as you
+save.
+
 * Generating production builds
 ```bash
 npm run build
 ```
+
 * Lint the entire code base
 ```bash
 npm run lint && npm run lint:markup
 ```
-  There are 2 different commands, as Vue files needs to be linted with `vue-tsc`
-  directly, and not with ESLint.
+There are 2 different commands, as Vue files needs to be linted with `vue-tsc`
+directly, and not with ESLint.
+
 * Generate Nix derivation:
 ```
 make
 ```
+
 * Build project with Nix:
 ```
 make build
 ```
-
 
 ### Directory Structure
 
@@ -260,6 +263,8 @@ make build
 <!-- ROADMAP -->
 ## Roadmap
 
+- [ ] Modify Storybook configuration
+- [ ] Add storybook documentation
 - [ ] Add proper testing support
 - [ ] Switch to personal ESLint configuration
 - [ ] Add link to personal styleguide

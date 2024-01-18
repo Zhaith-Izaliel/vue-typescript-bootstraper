@@ -62,6 +62,7 @@
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
 * [Usage](#usage)
+  * [Directory Structure](#directory-structure)
 * [Roadmap](#roadmap)
 * [Contributing](#contributing)
 * [License](#license)
@@ -81,10 +82,10 @@ complete package to work with Vue.js 3, with Typescript, on Vite. It is also
 loaded with support for routing using Vue Router, internationalization using
 VueI18n and TailwindCSS support out of the box.
 
-It contains opinionated defaults, with ESLint as the primary linter, following *mostly*
-the AirBnB Javascript and Typescript styleguides. Jest for easy testing purposes
-(WIP) all bundled up in a Nix flake to ease deployment and deployment cycles on
-Nix powered configurations.
+It contains opinionated defaults, with ESLint as the primary linter, following
+*mostly* the AirBnB Javascript and Typescript styleguides. Jest for easy testing
+purposes (WIP) all bundled up in a Nix flake to ease deployment and deployment
+cycles on Nix powered configurations.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -177,7 +178,80 @@ npm run dev
 
 ## Usage
 
+* Running in a Development environment:
+```bash
+npm run dev
+```
+  Vite enable Hot Reload by default, and will react to changes to your code as you
+  save.
+* Generating production builds
+```bash
+npm run build
+```
+* Lint the entire code base
+```bash
+npm run lint && npm run lint:markup
+```
+  There are 2 different commands, as Vue files needs to be linted with `vue-tsc`
+  directly, and not with ESLint.
+* Generate Nix derivation:
+```
+make
+```
+* Build project with Nix:
+```
+make build
+```
 
+
+### Directory Structure
+
+<!-- LTeX: enabled=false -->
+.
+├── nix/
+│   └── Contains the files you need for building with Nix.
+├── src/
+│   ├── *main.ts* | Your app TS entry point
+│   ├── *App.vue* | Your app entry point
+│   ├── *router.ts* | Generates the router instance
+│   ├── assets/
+│   │   ├── styles/
+│   │   │   ├── *all.css* | Imports all other styles
+│   │   │   ├── app/
+│   │   │   │   └── YourStyleSheet.css
+│   │   │   ├── globals/
+│   │   │   │   └── Contains all your global CSS variables
+│   │   │   └── vendors/
+│   │   │       └── Contains other vendors CSS
+│   │   └── images/
+│   │       └── Contains the images of your app.
+│   ├── components/
+│   │   └── ComponentName/
+│   │       ├── ComponentName.css
+│   │       ├── ComponentName.ts
+│   │       └── ComponentName.vue
+│   ├── hooks/
+│   │   └── Contains your TS hooks
+│   ├── i18n/
+│   │   ├── *index.ts* | Generates vueI18n instance
+│   │   └── messages/
+│   │       ├── en
+│   │       ├── fr
+│   │       └── ...
+│   ├── pages/
+│   │   └── PageName/
+│   │       ├── PageName.vue
+│   │       ├── PageName.ts
+│   │       └── PageName.css
+│   ├── routes/
+│   │   └── Contains your routes
+│   └── types/
+│       └── Contains your custom types
+├── test/
+│   └── Contains your test (WIP)
+└── *Makefile* | Eases Nix derivation generation
+
+<!-- LTeX: enabled=true -->
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

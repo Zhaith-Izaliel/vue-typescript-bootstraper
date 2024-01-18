@@ -16,6 +16,7 @@ module.exports = {
   parserOptions: {
     ecmaVersion: "latest",
     project: true,
+    tsconfigRootDir: ".",
   },
   plugins: ["@typescript-eslint", "jsdoc", "@stylistic/eslint-plugin-js"],
   rules: {
@@ -64,3 +65,4 @@ module.exports = {
     semi: ["error", "always"],
   },
 };
+

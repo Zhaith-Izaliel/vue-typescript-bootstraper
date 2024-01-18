@@ -1,4 +1,6 @@
 {
+  description = "An opinionated bootstraper to create a Vue.js application, with
+  first class Typescript support, powered by Vite.js";
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-23.11";
     flake-utils.url = "github:numtide/flake-utils";

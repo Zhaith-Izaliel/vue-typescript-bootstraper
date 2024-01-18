@@ -1,7 +1,13 @@
-export default {
-  en: {
-    message: {
-      hello: 'Hello World',
+import { createI18n } from 'vue-i18n';
+
+export default createI18n({
+  locale: 'en', // set locale
+  fallbackLocale: 'en', // set fallback locale
+  messages: {
+    en: {
+      message: {
+        hello: 'Hello World',
+      },
     },
-  },
-};
+  }, // set locale messages
+});

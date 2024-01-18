@@ -11,12 +11,18 @@ module.exports = {
     "plugin:vue/vue3-recommended",
     "airbnb-base",
     "airbnb-typescript/base",
+    "plugin:import/typescript",
   ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaVersion: "latest",
-    project: true,
-    tsconfigRootDir: ".",
+    project: "./tsconfig.json",
+  },
+  settings: {
+    "import/resolver": {
+      typescript: true,
+      node: true,
+    },
   },
   plugins: ["@typescript-eslint", "jsdoc", "@stylistic/eslint-plugin-js"],
   rules: {
@@ -65,4 +71,3 @@ module.exports = {
     semi: ["error", "always"],
   },
 };
-

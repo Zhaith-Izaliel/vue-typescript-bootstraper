@@ -17,7 +17,7 @@ module.exports = {
   parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaVersion: "latest",
-    project: "./tsconfig.json",
+    project: path.join(__dirname, "tsconfig.json"),
   },
   settings: {
     "import/resolver": {
@@ -72,3 +72,4 @@ module.exports = {
     semi: ["error", "always"],
   },
 };
+

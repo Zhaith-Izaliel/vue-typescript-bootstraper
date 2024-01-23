@@ -326,7 +326,8 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 [issues-url]: https://gitlab.com/bootstrapers/vue-typescript-bootstraper/-/issues
 
-[license-shield]: https://img.shields.io/gitlab/license/bootstrapers/vue-typescript-bootstraper.svg?style=for-the-badge&logo=gitlab
+[license-shield]: https://img.shields.io/gitlab/license/bootstrapers%2Fvue-typescript-bootstraper?style=for-the-badge&logo=gitlab
+
 [license-url]: https://gitlab.com/bootstrapers/vue-typescript-bootstraper/-/blob/master/LICENSE?ref_type=heads
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555

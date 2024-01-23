@@ -215,9 +215,9 @@ make build
 ├── nix/
 │   └── Contains the files you need for building with Nix.
 ├── src/
-│   ├── *main.ts* | Your app TS entry point
-│   ├── *App.vue* | Your app entry point
-│   ├── *router.ts* | Generates the router instance
+│   ├── main.ts | Your app TS entry point
+│   ├── App.vue | Your app entry point
+│   ├── router.ts | Generates the router instance
 │   ├── assets/
 │   │   ├── styles/
 │   │   │   ├── *all.css* | Imports all other styles
@@ -237,7 +237,7 @@ make build
 │   ├── hooks/
 │   │   └── Contains your TS hooks
 │   ├── i18n/
-│   │   ├── *index.ts* | Generates vueI18n instance
+│   │   ├── index.ts | Generates vueI18n instance
 │   │   └── messages/
 │   │       ├── en
 │   │       ├── fr
@@ -253,7 +253,7 @@ make build
 │       └── Contains your custom types
 ├── test/
 │   └── Contains your test (WIP)
-└── *Makefile* | Eases Nix derivation generation
+└── Makefile | Eases Nix derivation generation
 ```
 <!-- LTeX: enabled=true -->
 

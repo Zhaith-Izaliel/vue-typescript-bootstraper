@@ -1,6 +1,4 @@
-all: build
-
-node2nix-init:
+derivation:
 	rm -rf node_modules
 	node2nix --input package.json --output nix/node-packages.nix --composition nix/default.nix --node-env nix/node-env.nix
 

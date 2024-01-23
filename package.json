@@ -1,5 +1,17 @@
 {
   "name": "vue-typescript-bootstraper",
+  "author": "Virgil Ribeyre",
+  "license": "MIT",
+  "description": "An opinionated bootstraper to create a Vue.js application, with first class Typescript support, powered by Vite.js",
+  "keywords": [
+    "bootstraper",
+    "template",
+    "typescript",
+    "eslint",
+    "vuejs",
+    "tailwindcss",
+    "vite"
+  ],
   "version": "1.0.0",
   "type": "module",
   "engines": {

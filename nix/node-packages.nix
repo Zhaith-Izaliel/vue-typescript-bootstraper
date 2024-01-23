@@ -13,6 +13,33 @@ let
         sha512 = "Z2uID7YJ7oNvAI20O9X0bblw7Qqs8Q2hFy0R9tAfnfLkp5MW0UH9eUvnDSnFwKZ0AvgS1ucqR4KzvVHgnke1VQ==";
       };
     };
+    "@intlify/core-base-9.9.0" = {
+      name = "_at_intlify_slash_core-base";
+      packageName = "@intlify/core-base";
+      version = "9.9.0";
+      src = fetchurl {
+        url = "https://registry.npmjs.org/@intlify/core-base/-/core-base-9.9.0.tgz";
+        sha512 = "C7UXPymDIOlMGSNjAhNLtKgzITc/8BjINK5gNKXg8GiWCTwL6n3MWr55czksxn8RM5wTMz0qcLOFT+adtaVQaA==";
+      };
+    };
+    "@intlify/message-compiler-9.9.0" = {
+      name = "_at_intlify_slash_message-compiler";
+      packageName = "@intlify/message-compiler";
+      version = "9.9.0";
+      src = fetchurl {
+        url = "https://registry.npmjs.org/@intlify/message-compiler/-/message-compiler-9.9.0.tgz";
+        sha512 = "yDU/jdUm9KuhEzYfS+wuyja209yXgdl1XFhMlKtXEgSFTxz4COZQCRXXbbH8JrAjMsaJ7bdoPSLsKlY6mXG2iA==";
+      };
+    };
+    "@intlify/shared-9.9.0" = {
+      name = "_at_intlify_slash_shared";
+      packageName = "@intlify/shared";
+      version = "9.9.0";
+      src = fetchurl {
+        url = "https://registry.npmjs.org/@intlify/shared/-/shared-9.9.0.tgz";
+        sha512 = "1ECUyAHRrzOJbOizyGufYP2yukqGrWXtkmTu4PcswVnWbkcjzk3YQGmJ0bLkM7JZ0ZYAaohLGdYvBYnTOGYJ9g==";
+      };
+    };
     "@jridgewell/sourcemap-codec-1.4.15" = {
       name = "_at_jridgewell_slash_sourcemap-codec";
       packageName = "@jridgewell/sourcemap-codec";
@@ -22,85 +49,121 @@ let
         sha512 = "eF2rxCRulEKXHTRiDrDy6erMYWqNw4LPdQ8UQA4huuxaQsVeRPFl2oM8oDGxMFhJUWZf9McpLtJasDDZb/Bpeg==";
       };
     };
-    "@vue/compiler-core-3.4.14" = {
+    "@types/lodash-4.14.202" = {
+      name = "_at_types_slash_lodash";
+      packageName = "@types/lodash";
+      version = "4.14.202";
+      src = fetchurl {
+        url = "https://registry.npmjs.org/@types/lodash/-/lodash-4.14.202.tgz";
+        sha512 = "OvlIYQK9tNneDlS0VN54LLd5uiPCBOp7gS5Z0f1mjoJYBrtStzgmJBxONW3U6OZqdtNzZPmn9BS/7WI7BFFcFQ==";
+      };
+    };
+    "@types/luxon-3.4.1" = {
+      name = "_at_types_slash_luxon";
+      packageName = "@types/luxon";
+      version = "3.4.1";
+      src = fetchurl {
+        url = "https://registry.npmjs.org/@types/luxon/-/luxon-3.4.1.tgz";
+        sha512 = "m1KQEZZCITtheRhMVq5jDvAl0HwFhunLs7x6tpFFvUTJpKfmewS/Ymg+YA97/s8w1I1nC4pJyi0aAnn+vf3yew==";
+      };
+    };
+    "@types/node-20.11.5" = {
+      name = "_at_types_slash_node";
+      packageName = "@types/node";
+      version = "20.11.5";
+      src = fetchurl {
+        url = "https://registry.npmjs.org/@types/node/-/node-20.11.5.tgz";
+        sha512 = "g557vgQjUUfN76MZAN/dt1z3dzcUsimuysco0KeluHgrPdJXkP/XdAURgyO2W9fZWHRtRBiVKzKn8vyOAwlG+w==";
+      };
+    };
+    "@vue/compiler-core-3.4.15" = {
       name = "_at_vue_slash_compiler-core";
       packageName = "@vue/compiler-core";
-      version = "3.4.14";
+      version = "3.4.15";
       src = fetchurl {
-        url = "https://registry.npmjs.org/@vue/compiler-core/-/compiler-core-3.4.14.tgz";
-        sha512 = "ro4Zzl/MPdWs7XwxT7omHRxAjMbDFRZEEjD+2m3NBf8YzAe3HuoSEZosXQo+m1GQ1G3LQ1LdmNh1RKTYe+ssEg==";
+        url = "https://registry.npmjs.org/@vue/compiler-core/-/compiler-core-3.4.15.tgz";
+        sha512 = "XcJQVOaxTKCnth1vCxEChteGuwG6wqnUHxAm1DO3gCz0+uXKaJNx8/digSz4dLALCy8n2lKq24jSUs8segoqIw==";
       };
     };
-    "@vue/compiler-dom-3.4.14" = {
+    "@vue/compiler-dom-3.4.15" = {
       name = "_at_vue_slash_compiler-dom";
       packageName = "@vue/compiler-dom";
-      version = "3.4.14";
+      version = "3.4.15";
       src = fetchurl {
-        url = "https://registry.npmjs.org/@vue/compiler-dom/-/compiler-dom-3.4.14.tgz";
-        sha512 = "nOZTY+veWNa0DKAceNWxorAbWm0INHdQq7cejFaWM1WYnoNSJbSEKYtE7Ir6lR/+mo9fttZpPVI9ZFGJ1juUEQ==";
+        url = "https://registry.npmjs.org/@vue/compiler-dom/-/compiler-dom-3.4.15.tgz";
+        sha512 = "wox0aasVV74zoXyblarOM3AZQz/Z+OunYcIHe1OsGclCHt8RsRm04DObjefaI82u6XDzv+qGWZ24tIsRAIi5MQ==";
       };
     };
-    "@vue/compiler-sfc-3.4.14" = {
+    "@vue/compiler-sfc-3.4.15" = {
       name = "_at_vue_slash_compiler-sfc";
       packageName = "@vue/compiler-sfc";
-      version = "3.4.14";
+      version = "3.4.15";
       src = fetchurl {
-        url = "https://registry.npmjs.org/@vue/compiler-sfc/-/compiler-sfc-3.4.14.tgz";
-        sha512 = "1vHc9Kv1jV+YBZC/RJxQJ9JCxildTI+qrhtDh6tPkR1O8S+olBUekimY0km0ZNn8nG1wjtFAe9XHij+YLR8cRQ==";
+        url = "https://registry.npmjs.org/@vue/compiler-sfc/-/compiler-sfc-3.4.15.tgz";
+        sha512 = "LCn5M6QpkpFsh3GQvs2mJUOAlBQcCco8D60Bcqmf3O3w5a+KWS5GvYbrrJBkgvL1BDnTp+e8q0lXCLgHhKguBA==";
       };
     };
-    "@vue/compiler-ssr-3.4.14" = {
+    "@vue/compiler-ssr-3.4.15" = {
       name = "_at_vue_slash_compiler-ssr";
       packageName = "@vue/compiler-ssr";
-      version = "3.4.14";
+      version = "3.4.15";
       src = fetchurl {
-        url = "https://registry.npmjs.org/@vue/compiler-ssr/-/compiler-ssr-3.4.14.tgz";
-        sha512 = "bXT6+oAGlFjTYVOTtFJ4l4Jab1wjsC0cfSfOe2B4Z0N2vD2zOBSQ9w694RsCfhjk+bC2DY5Gubb1rHZVii107Q==";
+        url = "https://registry.npmjs.org/@vue/compiler-ssr/-/compiler-ssr-3.4.15.tgz";
+        sha512 = "1jdeQyiGznr8gjFDadVmOJqZiLNSsMa5ZgqavkPZ8O2wjHv0tVuAEsw5hTdUoUW4232vpBbL/wJhzVW/JwY1Uw==";
       };
     };
-    "@vue/reactivity-3.4.14" = {
+    "@vue/devtools-api-6.5.1" = {
+      name = "_at_vue_slash_devtools-api";
+      packageName = "@vue/devtools-api";
+      version = "6.5.1";
+      src = fetchurl {
+        url = "https://registry.npmjs.org/@vue/devtools-api/-/devtools-api-6.5.1.tgz";
+        sha512 = "+KpckaAQyfbvshdDW5xQylLni1asvNSGme1JFs8I1+/H5pHEhqUKMEQD/qn3Nx5+/nycBq11qAEi8lk+LXI2dA==";
+      };
+    };
+    "@vue/reactivity-3.4.15" = {
       name = "_at_vue_slash_reactivity";
       packageName = "@vue/reactivity";
-      version = "3.4.14";
+      version = "3.4.15";
       src = fetchurl {
-        url = "https://registry.npmjs.org/@vue/reactivity/-/reactivity-3.4.14.tgz";
-        sha512 = "xRYwze5Q4tK7tT2J4uy4XLhK/AIXdU5EBUu9PLnIHcOKXO0uyXpNNMzlQKuq7B+zwtq6K2wuUL39pHA6ZQzObw==";
+        url = "https://registry.npmjs.org/@vue/reactivity/-/reactivity-3.4.15.tgz";
+        sha512 = "55yJh2bsff20K5O84MxSvXKPHHt17I2EomHznvFiJCAZpJTNW8IuLj1xZWMLELRhBK3kkFV/1ErZGHJfah7i7w==";
       };
     };
-    "@vue/runtime-core-3.4.14" = {
+    "@vue/runtime-core-3.4.15" = {
       name = "_at_vue_slash_runtime-core";
       packageName = "@vue/runtime-core";
-      version = "3.4.14";
+      version = "3.4.15";
       src = fetchurl {
-        url = "https://registry.npmjs.org/@vue/runtime-core/-/runtime-core-3.4.14.tgz";
-        sha512 = "qu+NMkfujCoZL6cfqK5NOfxgXJROSlP2ZPs4CTcVR+mLrwl4TtycF5Tgo0QupkdBL+2kigc6EsJlTcuuZC1NaQ==";
+        url = "https://registry.npmjs.org/@vue/runtime-core/-/runtime-core-3.4.15.tgz";
+        sha512 = "6E3by5m6v1AkW0McCeAyhHTw+3y17YCOKG0U0HDKDscV4Hs0kgNT5G+GCHak16jKgcCDHpI9xe5NKb8sdLCLdw==";
       };
     };
-    "@vue/runtime-dom-3.4.14" = {
+    "@vue/runtime-dom-3.4.15" = {
       name = "_at_vue_slash_runtime-dom";
       packageName = "@vue/runtime-dom";
-      version = "3.4.14";
+      version = "3.4.15";
       src = fetchurl {
-        url = "https://registry.npmjs.org/@vue/runtime-dom/-/runtime-dom-3.4.14.tgz";
-        sha512 = "B85XmcR4E7XsirEHVqhmy4HPbRT9WLFWV9Uhie3OapV9m1MEN9+Er6hmUIE6d8/l2sUygpK9RstFM2bmHEUigA==";
+        url = "https://registry.npmjs.org/@vue/runtime-dom/-/runtime-dom-3.4.15.tgz";
+        sha512 = "EVW8D6vfFVq3V/yDKNPBFkZKGMFSvZrUQmx196o/v2tHKdwWdiZjYUBS+0Ez3+ohRyF8Njwy/6FH5gYJ75liUw==";
       };
     };
-    "@vue/server-renderer-3.4.14" = {
+    "@vue/server-renderer-3.4.15" = {
       name = "_at_vue_slash_server-renderer";
       packageName = "@vue/server-renderer";
-      version = "3.4.14";
+      version = "3.4.15";
       src = fetchurl {
-        url = "https://registry.npmjs.org/@vue/server-renderer/-/server-renderer-3.4.14.tgz";
-        sha512 = "pwSKXQfYdJBTpvWHGEYI+akDE18TXAiLcGn+Q/2Fj8wQSHWztoo7PSvfMNqu6NDhp309QXXbPFEGCU5p85HqkA==";
+        url = "https://registry.npmjs.org/@vue/server-renderer/-/server-renderer-3.4.15.tgz";
+        sha512 = "3HYzaidu9cHjrT+qGUuDhFYvF/j643bHC6uUN9BgM11DVy+pM6ATsG6uPBLnkwOgs7BpJABReLmpL3ZPAsUaqw==";
       };
     };
-    "@vue/shared-3.4.14" = {
+    "@vue/shared-3.4.15" = {
       name = "_at_vue_slash_shared";
       packageName = "@vue/shared";
-      version = "3.4.14";
+      version = "3.4.15";
       src = fetchurl {
-        url = "https://registry.npmjs.org/@vue/shared/-/shared-3.4.14.tgz";
-        sha512 = "nmi3BtLpvqXAWoRZ6HQ+pFJOHBU4UnH3vD3opgmwXac7vhaHKA9nj1VeGjMggdB9eLtW83eHyPCmOU1qzdsC7Q==";
+        url = "https://registry.npmjs.org/@vue/shared/-/shared-3.4.15.tgz";
+        sha512 = "KzfPTxVaWfB+eGcGdbSf4CWdaXcGDqckoeXUh7SB3fZdEtzPCK2Vq9B/lRRL3yutax/LWITz+SwvgyOxz5V75g==";
       };
     };
     "csstype-3.1.3" = {
@@ -128,6 +191,24 @@ let
       src = fetchurl {
         url = "https://registry.npmjs.org/estree-walker/-/estree-walker-2.0.2.tgz";
         sha512 = "Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==";
+      };
+    };
+    "lodash-4.17.21" = {
+      name = "lodash";
+      packageName = "lodash";
+      version = "4.17.21";
+      src = fetchurl {
+        url = "https://registry.npmjs.org/lodash/-/lodash-4.17.21.tgz";
+        sha512 = "v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==";
+      };
+    };
+    "luxon-3.4.4" = {
+      name = "luxon";
+      packageName = "luxon";
+      version = "3.4.4";
+      src = fetchurl {
+        url = "https://registry.npmjs.org/luxon/-/luxon-3.4.4.tgz";
+        sha512 = "zobTr7akeGHnv7eBOXcRgMeCP6+uyYsczwmeRCauvpvaAltgNyTbLH/+VaEAPUeWBT+1GuNmz4wC/6jtQzbbVA==";
       };
     };
     "magic-string-0.30.5" = {
@@ -184,46 +265,87 @@ let
         sha512 = "pXWcraxM0uxAS+tN0AG/BF2TyqmHO014Z070UsJ+pFvYuRSq8KH8DmWpnbXe0pEPDHXZV3FcAbJkijJ5oNEnWw==";
       };
     };
-    "vue-3.4.14" = {
+    "undici-types-5.26.5" = {
+      name = "undici-types";
+      packageName = "undici-types";
+      version = "5.26.5";
+      src = fetchurl {
+        url = "https://registry.npmjs.org/undici-types/-/undici-types-5.26.5.tgz";
+        sha512 = "JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==";
+      };
+    };
+    "vue-3.4.15" = {
       name = "vue";
       packageName = "vue";
-      version = "3.4.14";
+      version = "3.4.15";
       src = fetchurl {
-        url = "https://registry.npmjs.org/vue/-/vue-3.4.14.tgz";
-        sha512 = "Rop5Al/ZcBbBz+KjPZaZDgHDX0kUP4duEzDbm+1o91uxYUNmJrZSBuegsNIJvUGy+epLevNRNhLjm08VKTgGyw==";
+        url = "https://registry.npmjs.org/vue/-/vue-3.4.15.tgz";
+        sha512 = "jC0GH4KkWLWJOEQjOpkqU1bQsBwf4R1rsFtw5GQJbjHVKWDzO6P0nWWBTmjp1xSemAioDFj1jdaK1qa3DnMQoQ==";
+      };
+    };
+    "vue-i18n-9.9.0" = {
+      name = "vue-i18n";
+      packageName = "vue-i18n";
+      version = "9.9.0";
+      src = fetchurl {
+        url = "https://registry.npmjs.org/vue-i18n/-/vue-i18n-9.9.0.tgz";
+        sha512 = "xQ5SxszUAqK5n84N+uUyHH/PiQl9xZ24FOxyAaNonmOQgXeN+rD9z/6DStOpOxNFQn4Cgcquot05gZc+CdOujA==";
+      };
+    };
+    "vue-router-4.2.5" = {
+      name = "vue-router";
+      packageName = "vue-router";
+      version = "4.2.5";
+      src = fetchurl {
+        url = "https://registry.npmjs.org/vue-router/-/vue-router-4.2.5.tgz";
+        sha512 = "DIUpKcyg4+PTQKfFPX88UWhlagBEBEfJ5A8XDXRJLUnZOvcpMF8o/dnL90vpVkGaPbjvXazV/rC1qBKrZlFugw==";
       };
     };
   };
   args = {
     name = "vue-typescript-bootstraper";
     packageName = "vue-typescript-bootstraper";
-    version = "0.0.0";
+    version = "1.0.0";
     src = ./..;
     dependencies = [
       sources."@babel/parser-7.23.6"
+      sources."@intlify/core-base-9.9.0"
+      sources."@intlify/message-compiler-9.9.0"
+      sources."@intlify/shared-9.9.0"
       sources."@jridgewell/sourcemap-codec-1.4.15"
-      sources."@vue/compiler-core-3.4.14"
-      sources."@vue/compiler-dom-3.4.14"
-      sources."@vue/compiler-sfc-3.4.14"
-      sources."@vue/compiler-ssr-3.4.14"
-      sources."@vue/reactivity-3.4.14"
-      sources."@vue/runtime-core-3.4.14"
-      sources."@vue/runtime-dom-3.4.14"
-      sources."@vue/server-renderer-3.4.14"
-      sources."@vue/shared-3.4.14"
+      sources."@types/lodash-4.14.202"
+      sources."@types/luxon-3.4.1"
+      sources."@types/node-20.11.5"
+      sources."@vue/compiler-core-3.4.15"
+      sources."@vue/compiler-dom-3.4.15"
+      sources."@vue/compiler-sfc-3.4.15"
+      sources."@vue/compiler-ssr-3.4.15"
+      sources."@vue/devtools-api-6.5.1"
+      sources."@vue/reactivity-3.4.15"
+      sources."@vue/runtime-core-3.4.15"
+      sources."@vue/runtime-dom-3.4.15"
+      sources."@vue/server-renderer-3.4.15"
+      sources."@vue/shared-3.4.15"
       sources."csstype-3.1.3"
       sources."entities-4.5.0"
       sources."estree-walker-2.0.2"
+      sources."lodash-4.17.21"
+      sources."luxon-3.4.4"
       sources."magic-string-0.30.5"
       sources."nanoid-3.3.7"
       sources."picocolors-1.0.0"
       sources."postcss-8.4.33"
       sources."source-map-js-1.0.2"
       sources."typescript-5.3.3"
-      sources."vue-3.4.14"
+      sources."undici-types-5.26.5"
+      sources."vue-3.4.15"
+      sources."vue-i18n-9.9.0"
+      sources."vue-router-4.2.5"
     ];
     buildInputs = globalBuildInputs;
     meta = {
+      description = "An opinionated bootstraper to create a Vue.js application, with first class Typescript support, powered by Vite.js";
+      license = "MIT";
     };
     production = true;
     bypassCache = true;

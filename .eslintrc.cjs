@@ -14,11 +14,14 @@ module.exports = {
     "airbnb-base",
     "airbnb-typescript/base",
     "plugin:import/typescript",
-    "plugin:storybook/recommended"
+    "plugin:storybook/recommended",
+    "prettier",
   ],
-  parser: "@typescript-eslint/parser",
+  parser: "vue-eslint-parser",
   parserOptions: {
     ecmaVersion: "latest",
+    parser: "@typescript-eslint/parser",
+    extraFileExtensions: ["vue"],
     project: path.join(__dirname, "tsconfig.json"),
   },
   settings: {
@@ -30,13 +33,6 @@ module.exports = {
   plugins: ["@typescript-eslint", "jsdoc", "@stylistic/eslint-plugin-js"],
   rules: {
     "no-constant-binary-expression": "warn",
-    "@stylistic/js/eol-last": ["error", "always"],
-    "@stylistic/js/brace-style": ["error", "1tbs", { allowSingleLine: true }],
-    "@stylistic/js/array-element-newline": [
-      "error",
-      { multiline: true, minItems: 3 },
-    ],
-    "@stylistic/js/array-bracket-spacing": ["error", "always"],
     "no-constructor-return": "error",
     "no-duplicate-imports": "error",
     "no-template-curly-in-string": "error",
@@ -44,7 +40,6 @@ module.exports = {
     "require-atomic-updates": "error",
     "default-case": "error",
     curly: "error",
-    "max-depth": ["error", 3],
     "dot-notation": "error",
     "no-console":
       process.env.NODE_ENV === "production"
@@ -68,10 +63,18 @@ module.exports = {
       },
     ],
     eqeqeq: "error",
-    indent: ["error", 2],
+    indent: ["error", 2, { SwitchCase: 1 }],
     "linebreak-style": ["error", "unix"],
-    quotes: ["error", "single"],
+    quotes: ["error", "single", { avoidEscape: true }],
     semi: ["error", "always"],
+    "vue/multi-word-component-names": "off",
   },
+  overrides: [
+    {
+      files: ["src/**/*.vue"],
+      rules: {
+        "max-len": "off",
+      },
+    },
+  ],
 };
-

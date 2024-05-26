@@ -1,11 +1,21 @@
-{buildNpmPackage}:
+{
+  buildNpmPackage,
+  importNpmLock,
+  name,
+  version,
+  lib,
+}:
 buildNpmPackage {
-  pname = "vue-typescript-bootstraper";
-  version = "0.1.0";
+  inherit version;
+  pname = name;
 
-  src = ../.;
+  src = lib.cleanSource ../.;
 
-  npmDepsHash = "sha256-+RuRzASwQNu6AAi277gt4G9PHyZdvefuIXSGMHRb/tI=";
+  npmDeps = importNpmLock {
+    npmRoot = lib.cleanSource ../.;
+  };
+
+  npmConfigHook = importNpmLock.npmConfigHook;
 
   installPhase = ''
     cp -r dist $out

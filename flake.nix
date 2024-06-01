@@ -1,45 +1,36 @@
 {
-  description = "An opinionated bootstraper to create a Vue.js application, with
-  first class Typescript support, powered by Vite.js";
+  description = "An opinionated bootstraper to create a Vue.js application, with first class Typescript support, powered by Vite.js";
+
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-23.11";
-    flake-utils.url = "github:numtide/flake-utils";
-    flake-compat = {
-      url = "github:edolstra/flake-compat";
-      flake = false;
-    };
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.05";
   };
 
-  outputs = inputs: with inputs;
-  flake-utils.lib.eachDefaultSystem (system:
-    with import nixpkgs { inherit system; };
-    let
-      nodejs-package = pkgs.nodejs_21;
-    in
-    rec {
-      workspaceShell = pkgs.mkShell {
-        # nativeBuildInputs is usually what you want -- tools you need to run
-        nativeBuildInputs = with pkgs; [
-          nodejs-package
-          node2nix
-          gnumake
-          nodePackages.typescript-language-server
-        ];
-      };
+  outputs = inputs @ {flake-parts, ...}: let
+    inherit (packageJson) version name;
+    packageJson = builtins.fromJSON (builtins.readFile ./package.json);
+  in
+    flake-parts.lib.mkFlake {inherit inputs;} ({withSystem, ...}: {
+      systems = ["x86_64-linux" "aarch64-darwin" "x86_64-darwin"];
 
-      devShells = {
-        # nix develop
-        "${system}".default = workspaceShell;
-        default = workspaceShell;
+      perSystem = {
+        pkgs,
+        system,
+        ...
+      }: {
+        devShells = {
+          # nix develop
+          default = pkgs.mkShell {
+            nativeBuildInputs = with pkgs; [
+              nodePackages.prettier
+              nodePackages.typescript-language-server
+              nodejs_22
+            ];
+          };
+        };
+
+        packages = {
+          default = pkgs.callPackage ./nix {inherit version name;};
+        };
       };
-      packages = {
-        default = (import ./nix {
-          inherit pkgs system;
-          nodejs = nodejs-package;
-        }).package;
-        shell = devShells.default;
-      };
-    }
-  );
+    });
 }
-

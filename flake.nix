@@ -32,7 +32,7 @@
       flake = {
         templates.default = {
           description = "An opinionated bootstraper to create a Vue.js application, with first class Typescript support, powered by Vite.js.";
-          path = builtins.path {path = inputs.self;};
+          path = inputs.self;
         };
       };
     });

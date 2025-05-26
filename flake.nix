@@ -1,8 +1,8 @@
 {
-  description = "An opinionated bootstraper to create a Vue.js application, with first class Typescript support, powered by Vite.js";
+  description = "An opinionated bootstrapper to create a Vue.js application, with first class Typescript support, powered by Vite.js";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
+    nixpkgs.url = "github:NixOS/nixpkgs/25.05";
   };
 
   outputs = inputs @ {flake-parts, ...}: let
@@ -31,7 +31,7 @@
 
       flake = {
         templates.default = {
-          description = "An opinionated bootstraper to create a Vue.js application, with first class Typescript support, powered by Vite.js.";
+          description = "An opinionated bootstrapper to create a Vue.js application, with first class Typescript support, powered by Vite.js.";
           path = inputs.self;
         };
       };
